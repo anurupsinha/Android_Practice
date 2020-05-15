@@ -9,4 +9,13 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    <string-array name="BandNames">
+        <item>Nirvana</item>
+        <item>Pearl Jam</item>
+        <item>RHCP</item>
+        <item>Green Day</item>
+        <item>Foo Fighters</item>
+    </string-array>
+
 </resources>
