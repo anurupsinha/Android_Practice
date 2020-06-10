@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.loginmain.ui.login.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_loginFragment_to_success_Fragment"
+            app:destination="@id/success_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/success_Fragment"
+        android:name="com.example.loginmain.ui.login.Success_Fragment"
+        android:label="Success_Fragment">
+        <action
+            android:id="@+id/action_success_Fragment_to_fragment_RecyclerView"
+            app:destination="@id/fragment_RecyclerView" />
+        <action
+            android:id="@+id/action_success_Fragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="username"
+            android:defaultValue="Anurup"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_RecyclerView"
+        android:name="com.example.loginmain.ui.login.Fragment_RecyclerView"
+        android:label="frag_recycler"
+        tools:layout="@layout/frag_recycler">
+        <action
+            android:id="@+id/action_fragment_RecyclerView_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_DummyProfile"
+        android:name="com.example.loginmain.ui.login.Fragment_DummyProfile"
+        android:label="Fragment_DummyProfile" />
+    <activity
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.loginmain.ui.login.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
+</navigation>

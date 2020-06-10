@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/loginFragment"
+        android:icon="@android:drawable/ic_lock_idle_lock"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/fragment_DummyProfile"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="My Profile" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/fragment_DummyProfile"-->
+    <!--        android:icon="@android:drawable/stat_notify_error"-->
+    <!--        android:title="Tab2" />-->
+
+</menu>

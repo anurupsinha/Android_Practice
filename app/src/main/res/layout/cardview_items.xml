@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg2"
+    android:defaultFocusHighlightEnabled="true"
+    app:cardElevation="25dp">
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="397dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        android:padding="10sp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="353dp"
+            android:layout_height="171dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="19dp"
+            android:background="#000000"
+            android:padding="5sp"
+            android:src="@drawable/nirvana_icon" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:focusableInTouchMode="true"
+
+            android:padding="10sp"
+            android:text="Band Name"
+            android:textAlignment="center"
+            android:textColor="#DFCF3C"
+            android:textColorHighlight="@color/cardview_dark_background"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
